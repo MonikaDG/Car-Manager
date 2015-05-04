@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>form</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<script src="js/form.js"></script>
+			<script>
+
+</script>
+
+			
+		</head>
+		<body>
+			<div class="container jumbotron" id="fo">
+				
+				<div class="page-header">
+					<center><h1>Car Details</h1></center>
+				</div>
+				<br/>
+				<form name="myForm" action="home.html" onsubmit="return validateForm()">
+					<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-2">
+							<select id="carImage">
+								<option>Audi.png</option>
+								<option>Benz.png</option>
+								<option>Honda_City.png</option>
+								<option>Nissan_Sunny.png</option>
+							</select>
+						</div>
+						<div class="col-md-6">
+							<label> Car Image</label>
+						</div>
+						
+						</div>
+						<br/>
+						<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-2">
+							<input type="text" id="name" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label> Car Name</label>
+						</div>
+					</div>
+					<br/>
+					<br/>
+						<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-2">
+							<input type="text" id="mileage" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label> Mileage</label>
+						</div>
+					</div>
+					<br/>
+						<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-2">
+							<input type="text" id="seats" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label>No. of seats</label>
+						</div>
+					</div>
+					<br/>
+						<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-2">
+						<textarea rows="4" cols="20" id="description" class="form-control"></textarea>
+						</div>
+						<div class="col-md-6">
+							<label> Description</label>
+						</div>
+					</div>
+					<br/>
+					<br/>
+						<center><button class="btn-success btn-lg" onclick="saveCar()">Save Car Info</button></center>
+			
+				</form>
+				
+			</div>
+		</body>
+	</html>
+					

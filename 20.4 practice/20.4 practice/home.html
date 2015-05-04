@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>trial</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/style.css">
+			
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+			<script src="js/form.js"></script>
+			<script src="js/home.js"></script>
+			
+
+			<style>
+			#form1 {
+				width:95%%;
+				height:500px;
+				z-index:1;
+				position:absolute;
+				top:50px;
+				left:10px;
+				background-color:grey;
+				
+				display:none;
+
+			}
+			</style>
+			<script>
+		
+			</script>
+		</head>
+		<body>
+			<div class="container-fluid">
+				<img src="header.jpg" class="img-responsive">
+			
+				<nav class="navbar navbar-inverse">
+					<div class="container-fluid">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<div class="navbar-header">
+						
+						<a class="navbar-brand" href="#">Car Manager</a>
+						</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Offers</a></li>
+							<li><a href="#">About us</a></li> 
+							<li><a href="#">Contact</a></li> 
+						</ul>
+						
+					</div>
+					</div>
+				</nav>
+	
+				<div class="row">
+					<div class="col-md-2 addCar" id="divAddCar">
+						<br/>
+						
+
+						<input id="carName" type="text" placeholder="Enter car name" class="form-control">
+						<center><br/><button onClick="addCar()" class="btn-success btn-lg">Add Car</button></center>
+					</div>
+					<div class="col-md-7 middle">
+						<div id="form1">
+							
+				
+	
+					<center><h1>Car Details</h1></center>
+			
+				<br/>
+				<form name="myForm" action="home.html" onsubmit="return validateForm()">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-3">
+						<input type="file" id="fileInput">
+							<!--<select id="carImage">
+								<option>Audi.png</option>
+								<option>Benz.png</option>
+								<option>Honda_City.png</option>
+								<option>Nissan_Sunny.png</option>
+							</select>-->
+
+						</div>
+						<div class="col-md-6">
+							<label> Car Image</label>
+						</div>
+						
+						</div>
+						<br/>
+						<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-3">
+							<input type="text" id="name" >
+						</div>
+						<div class="col-md-6">
+							<label> Car Name</label>
+						</div>
+					</div>
+					<br/>
+					<br/>
+						<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-3">
+							<input type="text" id="mileage" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label> Mileage</label>
+						</div>
+					</div>
+					<br/>
+						<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-3">
+							<input type="text" id="seats" class="form-control">
+						</div>
+						<div class="col-md-6">
+							<label>No. of seats</label>
+						</div>
+					</div>
+					<br/>
+						<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-3">
+						<textarea rows="4" cols="20" id="description" class="form-control"></textarea>
+						</div>
+						<div class="col-md-6">
+							<label> Description</label>
+						</div>
+					</div>
+					<br/>
+					<br/>
+						<center><button class="btn-success btn-lg" onclick="saveCar()">Save Car Info</button></center>
+			
+				</form>
+				
+			</div>
+					
+						<div id="hello"></div>
+					</div>
+					<div class="col-md-3 search">
+						<br/>
+						<input type="text" id="searchInput" placeholder="Search" class="form-control"/>
+						<center><br/><button onclick="searchCar()" class="btn-success btn-lg">Search</button></center>
+						<div id="searchResult">
+					</div>
+					</div>
+				
+				
+					</div>
+					<div style="background-color:black;color:white">
+						<center>&copy;Tata Consultancy Services</center>
+					</div>
+					<div id="fileDisplayArea"></div>
+				</div>
+		</body>
+	</html>
